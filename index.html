@@ -7,6 +7,38 @@
     <title>Document</title>
 </head>
 <body>
+    <section>
+        <div part1>
+        <h1>Personal de Emfermeria Hospital de los Angeles</h1>
+        <form id="form">
+        <input type="text" id="name" name="name" placeholder="Nombre"><br><br>
+        <input type="text" id="job" name="job" placeholder="Puesto"><br><br>
+        <input type="text" id="experience" name="experience" placeholder="Area de trabajo"><br><br>
+        <input type="button" value="ENVIAR" id="btn" onclick="Submit()">
+        <input type="reset" id="clean" value="RESET"><br><br>
+        </form> 
+        </div>
+        <div id="msg"></div>
+        <div>
+        <table id="table">
+        <thead> 
+        <tr>
+        <td id="data-employes" colspan="4">Datos del personal</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="col">Nombre</td>
+        <td class="col">Puesto</td>
+        <td class="col">Area de trabajo</td>
+        <td class="col">Accion</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </section>
+        
+        
     <script src="app.js"></script>
 </body>
 </html>
