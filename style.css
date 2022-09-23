@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    }
+    
+    body{
+    background: 
+    linear-gradient(rgba(135, 194, 239, 0.05), rgba(205, 205, 227, 0.75)),
+    url(./img/hospital.jpg)no-repeat, fixed ;
+    background-size: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    }
+    
+    part1{
+        text-align: center;
+        display: flex;
+    }
+
+    #name, #experience, #job{
+        font-size: 1.2rem;
+        border-radius: 3px;
+        width: 15rem;
+    }
