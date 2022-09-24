@@ -4,48 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD HOSPITAL PERSONAL</title>
+    <title>PROYECTO CRUD</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0c2b93e236.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0c2b93e236.js" crossorigin="anonymous"></script>
 </head>
+
+
+
 <body>
     <section>
         <div part1>
-        <h1>Personal de Emfermeria Hospital de los Angeles</h1>
-        <form id="form">
-        <input type="text" id="name" name="name" placeholder="Nombre"><br><br>
-        <input type="text" id="job" name="job" placeholder="Puesto"><br><br>
-        <input type="text" id="experience" name="experience" placeholder="Area de trabajo"><br><br>
-        <input type="button" value="ENVIAR" id="btn" onclick="Submit()">
-        <input type="reset" id="clean" value="RESET"><br><br>
-        </form> 
+            <h1>Personal de Emfermeria Hospital de los Angeles</h1>
+            <form id="form">
+                <input type="text" id="name" name="name" placeholder="Nombre"><br><br>
+                <input type="text" id="job" name="job" placeholder="Puesto"><br><br>
+                <input type="text" id="experience" name="experience" placeholder="Area de trabajo"><br><br>
+                <input type="button"  value="ENVIAR" id="btn" onclick="Submit()">
+                <input type="reset" id="clean" value="RESET"><br><br>
+            </form> 
         </div>
+        
         <div id="msg"></div>
+        
         <div>
-        <table id="table">
-        <thead> 
-        <tr>
-        <td id="data-employes" colspan="4">Datos del personal</td>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td class="col">Nombre</td>
-        <td class="col">Puesto</td>
-        <td class="col">Area de trabajo</td>
-        <td class="col">Accion</td>
-        </tr>
-        </tbody>
-        </table>
+            
+            <table  id="table">
+                <thead> 
+                    <tr>
+                        <td  id="data-employes" colspan="4">Datos del personal</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col">Nombre</td>
+                        <td class="col">Puesto</td>
+                        <td class="col">Area de trabajo</td>
+                        <td class="col1">Accion</td>
+        
+                    </tr>
+                </tbody>
+            
+                
+            </table>
         </div>
-        </section>
+           
+       
         
-        
-    <script src="app.js"></script>
+    </section>
+   
+    
+    <script src="./app.js"></script>
 </body>
 </html>

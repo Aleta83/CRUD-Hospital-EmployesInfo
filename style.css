@@ -5,7 +5,7 @@
     font-family: 'Playfair Display', serif;
     }
     
-    body{
+body{
     background: 
     linear-gradient(rgba(135, 194, 239, 0.05), rgba(205, 205, 227, 0.75)),
     url(./img/hospital.jpg)no-repeat, fixed ;
@@ -15,15 +15,167 @@
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
     
-    part1{
+.part1, h1{
+    padding: 4%;
+    color: rgb(60,88,90);
+    text-align: center;
+    justify-content: center;
+    font-size: 2.5em;
+}    
+
+#form{
+    text-align: center;
+}
+
+input {
+    text-align: center;
+    padding: 10px;
+}
+
+#name, #experience, #job{
+    font-size: 1.2rem;
+    border-radius: 10px;
+    width: 15rem;
+    border: none;
+}
+
+#btn{
+    background-color: #F7CA18;
+    color: white;
+    border: solid #F7CA18;
+    width: 60px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    margin-right: 1em;
+    width: 80px;
+    align-items: center;
+}
+    
+#btn:hover{
+    box-shadow: 0 0 10px 0 #F7CA18 inset, 0 0 10px 4px #F7CA18;
+} 
+    
+#clean{
+    background-color: #3498db;
+    color: white;
+    border: solid #3498db;
+    width: 60px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    margin-right: 1em;
+    width: 80px;
+    align-items: center;
+}
+    
+#clean:hover{
+    box-shadow: 0 0 10px 0 #2ecc71 inset, 0 0 10px 4px #2ecc71;
+} 
+
+table{
+    width: 80%;
+    border: 2px solid black;
+    border-collapse: collapse ;
+    align-content: center;
+    margin: auto;
+    border:none;
+}
+
+td{
+    background-color: #FAF3F3;
+    border :1px solid black;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1rem;
+    border-right: none;
+}
+
+#data-employes{
+    background-color:#3498db; 
+    text-align: center;
+    border: solid #3498db;
+    color: rgb(86,88,90);
+    font-size: 1.5em;
+    }
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+       
+        
+        .btn-container{
+        align-items: center;
         text-align: center;
         display: flex;
-    }
+        flex-direction: column;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        span {
+        display: block;
+        text-align: center;
+        font-size: 1em;
+        color: black;
+        font-weight: 700;
+        
+        }
+        
+        .borrar{
+        background-color:#e74c4c;
+        color:white;
+        border-radius: 5px;
+        width: 60px;
+        border: solid #e74c4c; 
+        justify-content: space-around; 
+        }
+        
+        .borrar:hover{
+        box-shadow: 0 0 10px 0 #e74c4c inset, 0 0 10px 4px #e74c4c;
+        }
+        
+        .editar{
+        
+        background-color: #2ecc71;
+        color: white;
+        border: solid #2ecc71;
+        width: 60px;
+        border-radius: 5px;
+        text-align: center;
+        align-items: center;
+        }
+        
+        .editar:hover{
+        box-shadow: 0 0 10px 0 #2ecc71 inset, 0 0 10px 4px #2ecc71;
+        }
 
-    #name, #experience, #job{
-        font-size: 1.2rem;
-        border-radius: 3px;
-        width: 15rem;
+@media screen and (max-width:700px){
+    
+    h1{
+        font-size: 1.7em;
     }
+}  
+
+
+@media screen and (max-width:400px){
+    h1{
+        font-size: 1.5em;
+    }
+}    
