@@ -51,13 +51,15 @@ input {
     background-color: #F7CA18;
     color: white;
     border: solid #F7CA18;
-    width: 60px;
+    width: 80px;
     border-radius: 5px;
     text-align: center;
     align-items: center;
     margin-right: 1em;
-    width: 80px;
-    align-items: center;
+    display: table-column;
+    font-size: 1em;
+    
+    
     
 }
     
@@ -69,14 +71,13 @@ input {
     background-color: #3498db;
     color: white;
     border: solid #3498db;
-    width: 60px;
+    width: 80px;
     border-radius: 5px;
     text-align: center;
     align-items: center;
-    margin-right: 1em;
-    width: 80px;
-    align-items: center;
+    display: table-column;
     margin-top: 1em;
+    font-size: 1em;
 }
     
 #clean:hover{
@@ -84,12 +85,12 @@ input {
 } 
 
 table{
-    width: 80%;
+    width: 75%;
     border: 2px solid black;
     border-collapse: collapse ;
     align-content: center;
     margin: auto;
-    border: solid #3498db;
+    border: solid #e7ecef;
 }
 
 td, td{
@@ -110,9 +111,9 @@ td, td{
 
 
 #data-employes{
-    background: #378dbd;
+    background:#e7ecef;
     text-align: center;
-    border: solid #8ed1fc;
+    border: solid #e7ecef;
     color: black;
     font-size: 1.5em;
     }
@@ -160,20 +161,62 @@ span {
     color: black;
     font-weight: 700;
     margin-bottom: 2%;
+    letter-spacing: .8px;
+    
     
     }
         
+
+
+td{
+    background: #e7ecef;
+}
        
-@media screen and (max-width:700px){
+@media screen and (max-width:768px){
     
     h1{
         font-size: 1.7em;
     }
+
+    #name, #experience, #job{
+        font-size: 1em;
+    }
+
+    .borrar, .editar{
+        font-size: .9em;
+        width: 50px;
+    }
+    span{
+        font-size: 1em;
+    }
 }  
 
 
-@media screen and (max-width:400px){
+
+@media screen and (max-width:576px){
     h1{
         font-size: 1.5em;
     }
+
+    #data-employes, .col, td{
+        font-size: 0.9em;
+    }
+    .borrar, .editar{
+        font-size: .8em;
+        width: 40px;
+    }
+    #clean, #btn {
+        font-size: .7em;
+        min-width: 30px;
+    }
+
+    #name, #experience, #job{
+        font-size: 1em;
+    }
+
+    span{
+        font-size: .8em;
+    }
+
+    
 }    

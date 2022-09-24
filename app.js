@@ -11,7 +11,7 @@ let name = document.getElementById("name").value;
 let job = document.getElementById("job").value;
 let exp = document.getElementById("experience").value;
 if (name === "" || job === "" || exp === "") {
-msg.innerHTML = `<span>Por favor inserta la informacion completa</span>`;
+msg.innerHTML = `<span>Por favor ingresa la informacion completa!</span>`;
 return false;
 }
 return true;
@@ -49,7 +49,7 @@ exp: exp,
 };
 
 
-msg.innerHTML = `<span>Informacion insertada😃</span>`;
+msg.innerHTML = `<span>Informacion ingresada😄</span>`;
 return personalDeEnfermeria;
 }
 function readingDataFromLocalStore() {
@@ -63,6 +63,7 @@ function insert(data) {
 let table = document.getElementById("table");
 var row = table.insertRow();
 
+
 //creamos los botones
 let buttonDelete = document.createElement("button");
 let buttonEdit = document.createElement("button");
@@ -71,7 +72,7 @@ buttonDelete.textContent = "Borrar";
 buttonDelete.classList = "borrar"
 //buttonDelete.setAttribute('style', 'background: salmon')
 
-buttonEdit.textContent = "Editar";
+buttonEdit.textContent = "Editar ";
 buttonEdit.classList ="editar"
 buttonsContainer.classList= "btn-container"
 
@@ -119,6 +120,7 @@ row.cells[2].innerHTML = exp;
 // tenemos que actualizar tambien el localStorage
 let personal = readingDataFromLocalStore();
 
+
 personal[row.rowIndex - 2].name = name;
 personal[row.rowIndex - 2].job = job;
 personal[row.rowIndex - 2].exp = exp;
@@ -136,7 +138,7 @@ let ans = confirm("Estas seguro de querer borrar los datos?");
 if (ans == true) {
 //row = td.parentElement.parentElement;
 document.getElementById("table").deleteRow(row.rowIndex);
-msg.innerHTML = `<span>Informacion eliminada</span>`;
+msg.innerHTML = `<span style= "color: red;">Informacion eliminada!</span>`;
 
 //tambien borramos los datos del localStorage
 let personal = readingDataFromLocalStore();
