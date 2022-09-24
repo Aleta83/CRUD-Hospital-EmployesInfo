@@ -11,7 +11,7 @@ let name = document.getElementById("name").value;
 let job = document.getElementById("job").value;
 let exp = document.getElementById("experience").value;
 if (name === "" || job === "" || exp === "") {
-msg.innerHTML = `<span>Por favor inserta la informacion</span>`;
+msg.innerHTML = `<span>Por favor inserta la informacion completa</span>`;
 return false;
 }
 return true;
@@ -49,7 +49,7 @@ exp: exp,
 };
 
 
-msg.innerHTML = "informacion insertada";
+msg.innerHTML = `<span>Informacion insertada😃</span>`;
 return personalDeEnfermeria;
 }
 function readingDataFromLocalStore() {
@@ -127,7 +127,7 @@ localStorage.setItem("personal", JSON.stringify(personal));
 let buttonSubmit = document.getElementById("btn");
 buttonSubmit.onclick = Submit;
 document.getElementById("form").reset();
-msg.innerHTML = "informacion actual";
+msg.innerHTML = `<span>Informacion actualizada</span>`;
 }
 
 //delete
@@ -136,7 +136,7 @@ let ans = confirm("Estas seguro de querer borrar los datos?");
 if (ans == true) {
 //row = td.parentElement.parentElement;
 document.getElementById("table").deleteRow(row.rowIndex);
-msg.innerHTML = "informacion Borrada";
+msg.innerHTML = `<span>Informacion eliminada</span>`;
 
 //tambien borramos los datos del localStorage
 let personal = readingDataFromLocalStore();
